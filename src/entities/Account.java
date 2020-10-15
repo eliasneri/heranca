@@ -23,7 +23,7 @@ public class Account {
 		return holder;
 	}
 	
-	public Double balance() {
+	public Double getBalance() {
 		return balance;
 	}
 	

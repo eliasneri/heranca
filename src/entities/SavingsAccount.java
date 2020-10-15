@@ -24,4 +24,5 @@ public class SavingsAccount extends Account {
 	public void updateBalance() {
 		balance += balance * interestRate;
 	}
+
 }
