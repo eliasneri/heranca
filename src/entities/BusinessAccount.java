@@ -30,7 +30,13 @@ public class BusinessAccount extends Account{
 	
 	public void loan(double amount) {
 		if (amount <= loanLimit) {
-			deposit(amount);
+			balance += amount - 10.0;
+			/* ao fazer essa implementação, a variavel balance da classe account não estará visivel
+			 * pois na classe Account, a mesma está como private... para que esteja visivel, é necessário
+			 * utilizar o protected... isso não deixará a variavel pública, evitando q esta classe possa alterar
+			 * porém outras classes não. essa consegue pois está herdando!
+			 * substituindo então o "private balance".... por "protected balance"
+			 */
 		}
 	}
 	

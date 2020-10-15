@@ -1,0 +1,8 @@
+UpCasting
+significa casting da subclasse para superclasse, ou seja subir da sub para a classe.
+
+É como ter um objeto do tipo "businessAccount" e querer atribuir esse objeto a uma variavél do tipo Account
+é muito comum esse uso em polimorfismo!
+
+o Downcasting é o contrário
+é como se tivesse um objeto do tipo Account e quizesse atribuir ao BusinessAccount
