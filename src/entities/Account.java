@@ -40,6 +40,6 @@ public class Account {
 	}
 	
 	public void whitdraw(double amount) {
-		balance -= amount;
+		balance -= amount + 5.0;
 	}
 }

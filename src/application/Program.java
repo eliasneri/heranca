@@ -68,23 +68,32 @@ public class Program {
 		
 		if (acc3 instanceof SavingsAccount) {
 			SavingsAccount acc5 = (SavingsAccount)acc3;
+			acc5.setInterestRate(200.0);
 			acc5.updateBalance();
 			System.out.println("Update!");
+			System.out.println(acc5.getNumber() + " - " + acc5.getHolder() + " - " + acc5.getBalance());
 		}
 		
 		
-		System.out.println("Account acc = new Account(1001, \"Alex\", 0.0)");
-		System.out.println(acc.getNumber() + " - " + acc.getHolder() + " - " + acc.getBalance());
+			System.out.println("Account acc = new Account(1001, \"Alex\", 0.0)");
+			System.out.println(acc.getNumber() + " - " + acc.getHolder() + " - " + acc.getBalance());
 		
 		System.out.println("********");
 		
-		System.out.println("BusinessAccount bacc = new BusinessAccount(1002, \"Maria\", 0.0, 500.0)");
-		System.out.println(bacc.getNumber() + " - " + bacc.getHolder() + " - " + bacc.getBalance() + " - " + bacc.getLoanLimit());
+			System.out.println("BusinessAccount bacc = new BusinessAccount(1002, \"Maria\", 0.0, 500.0)");
+			System.out.println(bacc.getNumber() + " - " + bacc.getHolder() + " - " + bacc.getBalance() + " - " + bacc.getLoanLimit());
 		
 		System.out.println("********");
 		
-		System.out.println("Account acc2 = new BusinessAccount(1003, \"Bob\", 0.0, 200.0)");
-		System.out.println(acc2.getNumber() + " - " + acc2.getHolder() + " - " + acc2.getBalance());
+			System.out.println("Account acc2 = new BusinessAccount(1003, \"Bob\", 0.0, 200.0)");
+			System.out.println(acc2.getNumber() + " - " + acc2.getHolder() + " - " + acc2.getBalance());
+		
+		System.out.println("********");
+		
+			System.out.println("Account acc3 = new SavingsAccount(1004, \"Anna\", 0.0, 0.01);");
+			System.out.println(acc3.getNumber() + " - " + acc3.getHolder() + " - " + acc3.getBalance());
+			System.out.println(acc1);
+		
 		
 	}
 
